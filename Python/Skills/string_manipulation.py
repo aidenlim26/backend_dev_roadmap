@@ -69,4 +69,22 @@ while j < len(pw):
 print(found)
 
 #Remove every vowel from "programming" using join and not in.
+word = "programming"
+vowels = "aeiou"
+new_word = []
+
+for letter in word:
+    if letter not in vowels:
+        new_word.append(letter)
+print("".join(new_word))
+
 #Shuffle the list ["a", "b", "c", "d"] and print it as one string.
+list = ["a", "b", "c", "d"]
+new_list = []
+
+for ch in range(len(list)):
+    pick = random.choice(list)
+    new_list.append(pick)
+    list.remove(pick)
+
+print("".join(new_list))
